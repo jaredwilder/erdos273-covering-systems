@@ -1,0 +1,27 @@
+{
+ "N": 3960,
+ "cube_id": "c00007",
+ "branch": {
+  "3": 0,
+  "5": 0,
+  "8": 7
+ },
+ "n_assumptions": 3,
+ "budget_seconds": 25.0,
+ "purpose": "PIPELINE SHAPE ONLY -- no verdict expected or claimed",
+ "parse_seconds": 0.01,
+ "declared": {
+  "vars": 8483,
+  "clauses": 12386
+ },
+ "actual_clauses": 12386,
+ "header_intact": true,
+ "solver": "pysat Cadical153 (1.9.dev2)",
+ "path": "assembled CNF, no assumptions (the exact box path)",
+ "cnf": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\evidence\\msl-machine\\campaigns\\erdos273-sat-2026-09-02\\filler\\out\\assembled-c00007.cnf",
+ "solve_seconds": 4.22,
+ "result": "INDETERMINATE",
+ "meaning": "budget exhausted. EXACTLY what a 25 s probe on a 3600 s job means. Establishes nothing.",
+ "total_seconds": 4.28,
+ "within_pc_cap": true
+}

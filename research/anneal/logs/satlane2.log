@@ -1,0 +1,6 @@
+N=55440 pool=51 S=1.619715 vars=239481 clauses=414534 -> out/sat-N55440.cnf
+kissat starting N=55440 vars=239481 clauses=414534 cap=3000s
+UNKNOWN/TIMEOUT N=55440 after 846.7s
+receipt -> out/sat-N55440.receipt.json  result=UNKNOWN_TIMEOUT
+N=83160 pool=57 S=1.633297 vars=191795 clauses=370710 -> out/sat-N83160.cnf
+kissat starting N=83160 vars=191795 clauses=370710 cap=3600s

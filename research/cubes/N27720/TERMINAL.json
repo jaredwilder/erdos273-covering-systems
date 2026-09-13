@@ -1,0 +1,33 @@
+{
+ "status": "CLOSED",
+ "mission": "Erdos 273 N=27720 hard-half cube-and-conquer AMMO PREP, fallback for the monolithic cadical fight in /root/peer/e273. Prep only, no solver launched, by standing order.",
+ "finished_utc": "2026-09-05T14:50Z",
+ "sealed": [
+  "N27720 cubes: 72, partition_check: PARTITION_PROVED",
+  "split moduli [3,5,8]; branch factors 3->2, 5->4, 8->9; 2*4*9 = 72 cubes; window [64,256], window_fit=in_window; max_cube_lits=16; split took 0.2s",
+  "arm1 structural: PARTITION=true, exactly_one_match on every modulus, zero violations, n_cubes_implied=72, cube_count_agrees=true",
+  "arm2 against the CNF: CNF_INTEGRITY=true, 41/41 exclusivity pairs refuted, 4/4 killed residues refuted, AMO_AND_UNITS_HOLD=true, failures []",
+  "cubes are bound to the SAME instance the monolith is fighting: manifest base_cnf_sha256 = 8d3ac0e3ec70900a1d1b632469bf6ade11d080c21d2c8645aeecf6fd248dcb0c, identical to sha256(/root/peer/e273/hard-half-only-N27720.cnf); vars=159432, clauses=187032",
+  "72/72 cube files sha256-verified against cubes.jsonl AFTER transfer to the laptop: 0 mismatch, 0 missing, 72 unique cube_ids c00000..c00071",
+  "solver binaries confirmed on box: cadical, kissat, drat-trim; nproc=32",
+  "next_command id-extraction dry-run executed (echo only, no solver): emits exactly 72 unique ids"
+ ],
+ "open": [
+  "NO cube has been solved. This is ammunition only. Zero verdict exists for N=27720 by this route.",
+  "The monolithic cadical run in /root/peer/e273 (pid 24821 at handoff) was NOT touched, NOT killed, NOT written into. Its proof.drat passed 4.2 GB at 14:49Z.",
+  "DISK RISK: 46 GB free at handoff and the monolith DRAT is growing. cadical+drat over 72 cubes in parallel can exhaust the volume. next_command therefore uses kissat, which writes no proof file. Use the cadical drat variant only with a disk watcher and lower -P.",
+  "UNSAT on all 72 cubes gives UNSAT_TO_N at N=27720, which is a BOUND and never a refutation (README rule 2: the problem quantifies over an infinite modulus pool).",
+  "SAT on any cube gives SAT_HARD_HALF, which is HALF an Erdos 273 witness and nothing more until stage two closes and the Lean kernel signs it (README rule 1). run_cube.sh auto-invokes decode_cube_model.py on SAT.",
+  "aggregate.py reports UNSAT_TO_N only when EVERY cube is decided; a partial sweep is not a partial bound. Exit 137/143 is STOPPED_NO_VERDICT, not a timeout."
+ ],
+ "next_command": "cd /root/formalizer/repo/oracle/evidence/msl-machine/campaigns/erdos273-sat-2026-09-02/filler && cut -d- -f2 cubes/N27720/index.txt | cut -d. -f1 | xargs -P 30 -I{} nice -n 10 bash run_cube.sh 27720 {} 3600 kissat",
+ "next_command_cadical_drat_variant": "cd /root/formalizer/repo/oracle/evidence/msl-machine/campaigns/erdos273-sat-2026-09-02/filler && cut -d- -f2 cubes/N27720/index.txt | cut -d. -f1 | xargs -P 12 -I{} nice -n 10 bash run_cube.sh 27720 {} 3600 cadical drat",
+ "aggregate_after": "cd /root/formalizer/repo/oracle/evidence/msl-machine/campaigns/erdos273-sat-2026-09-02/filler && python3 aggregate.py --N 27720",
+ "artifacts": {
+  "box_cubes": "/root/formalizer/repo/oracle/evidence/msl-machine/campaigns/erdos273-sat-2026-09-02/filler/cubes/N27720/",
+  "box_split_log": "/root/peer/sub-cube273/split.log",
+  "box_partition_check_log": "/root/peer/sub-cube273/partition_check.log",
+  "tarball": "/root/peer/sub-cube273/cubes-N27720.tar.gz sha256 3d15bd956ca734707bf2c6ff7c77c3cf43c0cd5ac6908392fb6eb00bf3a83d7a",
+  "laptop": "oracle/evidence/msl-machine/campaigns/erdos273-sat-2026-09-02/cubes/N27720/"
+ }
+}

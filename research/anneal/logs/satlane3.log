@@ -1,0 +1,2 @@
+N=3960 pool=22 S=1.362879 vars=5648 clauses=12377 -> out/cad-N3960.cnf
+cadical starting N=3960 vars=5648 clauses=12377 cap=4500s

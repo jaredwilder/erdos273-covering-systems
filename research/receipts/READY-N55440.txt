@@ -1,0 +1,2 @@
+fixed-selfridge-half N=55440 NO-CNF reason=UNSAT_BY_DENSITY (2026-09-02T14:30:40Z)
+symmetric-two-halves N=55440 cnf=symmetric-two-halves-N55440.cnf vars=479020 clauses=829288 bytes=45480532 built=2026-09-02T14:32:37Z

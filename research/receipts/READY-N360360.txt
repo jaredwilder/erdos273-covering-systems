@@ -1,0 +1,1 @@
+fixed-selfridge-half N=360360 NO-CNF reason=UNSAT_BY_DENSITY (2026-09-02T14:30:40Z)

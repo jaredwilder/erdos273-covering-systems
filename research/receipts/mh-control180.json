@@ -1,0 +1,84 @@
+[
+ {
+  "N": 180,
+  "S": 1.5555555555555556,
+  "budget": 1.6,
+  "excluded": [],
+  "pool_size": 11,
+  "pool_minus2_size": 11,
+  "nodes": 63135084,
+  "seconds": 67.16,
+  "exhaustive": true,
+  "found": true,
+  "covering": [
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    15
+   ],
+   [
+    3,
+    18
+   ],
+   [
+    11,
+    20
+   ],
+   [
+    9,
+    30
+   ],
+   [
+    87,
+    90
+   ],
+   [
+    33,
+    36
+   ]
+  ],
+  "verify": {
+   "covers": true,
+   "distinct": true,
+   "all_legal": true,
+   "sum_recip": 1.5555555555555556,
+   "moduli": [
+    2,
+    3,
+    5,
+    6,
+    9,
+    15,
+    18,
+    20,
+    30,
+    36,
+    90
+   ]
+  },
+  "D_exact_or_upper": 1.5555555555555556,
+  "D_plus_1_exceeds_S": true,
+  "lcm": 180,
+  "BBMST_filter_2or9or15_divides_lcm": true,
+  "VERDICT": "found but D+1>S at this budget - rung still dead"
+ }
+]

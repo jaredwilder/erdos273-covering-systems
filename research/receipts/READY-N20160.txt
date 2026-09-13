@@ -1,0 +1,1 @@
+symmetric-two-halves N=20160 NO-CNF reason=UNSAT_BY_DENSITY (2026-09-02T14:30:39Z)

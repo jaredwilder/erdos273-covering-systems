@@ -1,0 +1,1 @@
+symmetric-two-halves N=138600 cnf=symmetric-two-halves-N138600.cnf vars=667976 clauses=1279011 bytes=121600743 built=2026-09-02T14:46:10Z

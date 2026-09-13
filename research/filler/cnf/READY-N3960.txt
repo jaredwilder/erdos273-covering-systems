@@ -1,0 +1,1 @@
+hard-half-only N=3960 cnf=hard-half-only-N3960.cnf vars=8483 clauses=12383 bytes=448936 built=2026-09-02T21:54:48Z

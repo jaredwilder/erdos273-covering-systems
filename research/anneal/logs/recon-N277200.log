@@ -1,0 +1,7 @@
+# anneal273 N=277200 K=73 S=1.672828 seed=7 secs=60 noise=0.15 fix3=1
+# pool: 3 5 6 8 9 11 14 15 18 20 21 30 33 35 36 44 48 50 56 63 75 90 99 105 120 140 165 168 176 198 200 210 231 300 308 315 330 336 350 440 495 504 525 600 660 900 1008 1155 1260 1400 1584 1650 1680 1848 1925 2100 2310 2475 2640 3150 3696 4620 4950 5775 6300 7700 9240 9900 17325 27720 39600 46200 55440
+# NOTE: S<=1 means the pool cannot cover -- density floor.
+t=20 iter=396288 cur=11629 run_best=3552 global_best=2809 restarts=0 perturbs=7
+t=40 iter=785408 cur=17245 run_best=3146 global_best=2759 restarts=0 perturbs=15
+STOP t=60 iter=1177600 global_best=2658 restarts=0 perturbs=23
+RESULT NO_WITNESS_FOUND_LOCAL_SEARCH N=277200 seed=7 best_uncovered=2658 seconds=60.0 iters=1177600

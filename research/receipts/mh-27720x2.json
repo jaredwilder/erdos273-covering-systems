@@ -1,0 +1,17 @@
+[
+ {
+  "N": 27720,
+  "S": 2.0873376623376623,
+  "budget": 1.0873376623376623,
+  "excluded": [
+   2
+  ],
+  "pool_size": 43,
+  "pool_minus2_size": 42,
+  "nodes": 400000325,
+  "seconds": 2018.54,
+  "exhaustive": false,
+  "found": false,
+  "VERDICT": "INCONCLUSIVE_NODE_CAP"
+ }
+]

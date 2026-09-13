@@ -1,0 +1,49 @@
+{
+ "N": 3960,
+ "mode": "onehalf",
+ "formulation": "hard-half-only",
+ "pool": [
+  3,
+  5,
+  6,
+  8,
+  9,
+  11,
+  15,
+  18,
+  20,
+  30,
+  33,
+  36,
+  44,
+  90,
+  99,
+  120,
+  165,
+  198,
+  330,
+  440,
+  495,
+  660
+ ],
+ "x_vars": 5670,
+ "vars": 8483,
+ "clauses": 12383,
+ "var_of_half_h_r": "var = 1 + half*sum(pool) + sum(h' in pool, h'<h) + r",
+ "lift": "true modulus = 2*h ; true residue = 2*r + half ; p = 2*h+1",
+ "active_halves": [
+  0
+ ],
+ "allowed_residues": {
+  "3": [
+   0
+  ],
+  "5": [
+   0,
+   1,
+   2
+  ]
+ },
+ "cnf": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\evidence\\msl-machine\\campaigns\\erdos273-sat-2026-09-02\\filler\\cnf\\hard-half-only-N3960.cnf",
+ "compat_note": "mode is relabelled `onehalf` ONLY so scripts/decode_model.py runs unmodified. The instance is hard-half-only: pool excludes modulus 2. decode_model.py will print HALF_VERIFIED (NOT an Erdos 273 witness), which is the correct reading."
+}

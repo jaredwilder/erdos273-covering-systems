@@ -1,0 +1,5 @@
+STARTED 2026-09-05T14:47:33Z
+CMD python3 f273_cube_split.py --N 27720 --cnf cnf/hard-half-only-N27720.cnf
+{"N": 27720, "split_moduli": [3, 5, 8], "n_cubes": 72, "window": [64, 256], "window_fit": "in_window", "max_cube_lits": 16, "dir": "/root/formalizer/repo/oracle/evidence/msl-machine/campaigns/erdos273-sat-2026-09-02/filler/cubes/N27720", "seconds": 0.2}
+EXIT_CODE 0
+EXITED 2026-09-05T14:47:34Z

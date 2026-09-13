@@ -1,0 +1,23 @@
+# anneal273 N=332640 K=79 S=1.686036 seed=105 secs=7500 noise=0.15 fix3=1
+# question-lock: /root/peer/anneal273/erdos273-covering-sat-ladder.json
+# pool: 3 5 6 8 9 11 14 15 18 20 21 30 33 35 36 44 48 54 56 63 90 96 99 105 120 135 140 165 168 176 189 198 210 216 224 231 270 288 308 315 330 336 378 440 495 504 660 1008 1056 1080 1155 1188 1260 1485 1584 1680 1848 2079 2310 2640 3168 3696 3780 4158 4320 4620 6048 7560 8316 9240 9504 10080 11880 15120 23760 27720 33264 55440 166320
+# NOTE: S<=1 means the pool cannot cover -- density floor.
+t=60 iter=1568768 cur=12288 run_best=2858 global_best=1787 restarts=0 perturbs=30
+t=120 iter=3105792 cur=5078 run_best=1966 global_best=1782 restarts=1 perturbs=54
+t=180 iter=4657152 cur=5672 run_best=2616 global_best=1430 restarts=2 perturbs=79
+t=240 iter=6250496 cur=17344 run_best=2382 global_best=1430 restarts=3 perturbs=103
+t=300 iter=7782400 cur=10145 run_best=2966 global_best=1430 restarts=4 perturbs=128
+t=360 iter=9388032 cur=7177 run_best=3025 global_best=1430 restarts=4 perturbs=158
+t=420 iter=10994688 cur=10874 run_best=1774 global_best=1430 restarts=5 perturbs=185
+t=480 iter=12575744 cur=13264 run_best=2153 global_best=1430 restarts=6 perturbs=213
+t=540 iter=14182400 cur=8206 run_best=1976 global_best=1430 restarts=7 perturbs=241
+t=600 iter=15788032 cur=11767 run_best=2851 global_best=1430 restarts=8 perturbs=267
+t=660 iter=17398784 cur=8773 run_best=2249 global_best=1430 restarts=8 perturbs=295
+t=720 iter=19000320 cur=5946 run_best=3138 global_best=1430 restarts=9 perturbs=323
+t=780 iter=20552704 cur=7357 run_best=1993 global_best=1430 restarts=10 perturbs=346
+t=840 iter=22132736 cur=12857 run_best=2530 global_best=1430 restarts=11 perturbs=374
+t=900 iter=23717888 cur=11000 run_best=3247 global_best=1430 restarts=12 perturbs=402
+t=960 iter=25152512 cur=7587 run_best=2560 global_best=1430 restarts=13 perturbs=429
+t=1020 iter=26448896 cur=8546 run_best=2375 global_best=1430 restarts=13 perturbs=451
+t=1080 iter=27768832 cur=13487 run_best=3122 global_best=1430 restarts=14 perturbs=473
+t=1140 iter=29071360 cur=5556 run_best=2699 global_best=1430 restarts=15 perturbs=493

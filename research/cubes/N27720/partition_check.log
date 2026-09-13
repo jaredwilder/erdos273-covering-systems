@@ -1,0 +1,6 @@
+STARTED 2026-09-05T14:47:41Z
+CMD python3 partition_check.py --N 27720 --cnf cnf/hard-half-only-N27720.cnf
+{"N": 27720, "split_moduli": [3, 5, 8], "arm1": true, "n_cubes_implied": 72, "cube_count_agrees": true, "arm2_run": true, "arm2": true, "VERDICT": "PARTITION_PROVED", "seconds": 0.35}
+check /root/formalizer/repo/oracle/evidence/msl-machine/campaigns/erdos273-sat-2026-09-02/filler/cubes/N27720/partition-check.json
+EXIT_CODE 0
+EXITED 2026-09-05T14:47:42Z

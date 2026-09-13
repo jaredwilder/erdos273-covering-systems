@@ -1,0 +1,2 @@
+single-half-control N=180 cnf=single-half-control-N180.cnf vars=690 clauses=838 bytes=13485 built=2026-09-02T14:31:37Z
+P3-CONTROL-symmetric-two-halves N=180 cnf=P3-CONTROL-symmetric-two-halves-N180.cnf vars=927 clauses=1723 bytes=30869 built=2026-09-02T14:38:07Z

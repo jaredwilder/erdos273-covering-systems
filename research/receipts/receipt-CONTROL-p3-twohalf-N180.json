@@ -1,0 +1,261 @@
+{
+ "tag": "CONTROL-p3-twohalf-N180",
+ "N": 180,
+ "mode": "symmetric",
+ "formulation": "P3-CONTROL-symmetric-two-halves",
+ "cnf_path": "/root/peer/sat273/cnf/P3-CONTROL-symmetric-two-halves-N180.cnf",
+ "solver": "kissat",
+ "secs_cap": 60,
+ "question_lock": "/root/peer/sat273/erdos273-covering-sat-ladder.json",
+ "started": "2026-09-02T14:38:07Z",
+ "build_seconds": 0.01,
+ "meta": {
+  "N": 180,
+  "mode": "symmetric",
+  "pool_size": 12,
+  "sum_recip": 2.5555555555555554,
+  "amo_backend": "pysat",
+  "allow_p3": true,
+  "density_verdict": "density_ok",
+  "forced_moduli": [
+   1
+  ],
+  "symbreak": {
+   "h0": 1,
+   "half_swap": true,
+   "translate_half0": true
+  },
+  "vars": 927,
+  "x_vars": 470,
+  "clauses": 1723,
+  "literals": 7045,
+  "cnf_bytes": 30869
+ },
+ "pool": [
+  1,
+  2,
+  3,
+  5,
+  6,
+  9,
+  15,
+  18,
+  20,
+  30,
+  36,
+  90
+ ],
+ "free_pool": null,
+ "result": "SAT",
+ "solve_seconds": 0.07,
+ "halves": {
+  "0": [
+   [
+    0,
+    1
+   ]
+  ],
+  "1": [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    14,
+    15
+   ],
+   [
+    17,
+    18
+   ],
+   [
+    17,
+    20
+   ],
+   [
+    5,
+    30
+   ],
+   [
+    11,
+    36
+   ],
+   [
+    11,
+    90
+   ]
+  ]
+ },
+ "verification": {
+  "half0_covers_Z": true,
+  "half1_covers_Z": true,
+  "half0_lcm": 1,
+  "half1_lcm": 180,
+  "moduli_half0": [
+   1
+  ],
+  "moduli_half1": [
+   2,
+   3,
+   5,
+   6,
+   9,
+   15,
+   18,
+   20,
+   30,
+   36,
+   90
+  ],
+  "disjoint_and_distinct": true,
+  "lifted_pairs": [
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    3,
+    12
+   ],
+   [
+    11,
+    18
+   ],
+   [
+    29,
+    30
+   ],
+   [
+    35,
+    36
+   ],
+   [
+    35,
+    40
+   ],
+   [
+    11,
+    60
+   ],
+   [
+    23,
+    72
+   ],
+   [
+    23,
+    180
+   ]
+  ],
+  "lifted_covers_Z": true,
+  "lifted_lcm": 360,
+  "primality": [
+   {
+    "m": 2,
+    "p": 3,
+    "prime": true,
+    "ge5": false
+   },
+   {
+    "m": 4,
+    "p": 5,
+    "prime": true,
+    "ge5": true
+   },
+   {
+    "m": 6,
+    "p": 7,
+    "prime": true,
+    "ge5": true
+   },
+   {
+    "m": 10,
+    "p": 11,
+    "prime": true,
+    "ge5": true
+   },
+   {
+    "m": 12,
+    "p": 13,
+    "prime": true,
+    "ge5": true
+   },
+   {
+    "m": 18,
+    "p": 19,
+    "prime": true,
+    "ge5": true
+   },
+   {
+    "m": 30,
+    "p": 31,
+    "prime": true,
+    "ge5": true
+   },
+   {
+    "m": 36,
+    "p": 37,
+    "prime": true,
+    "ge5": true
+   },
+   {
+    "m": 40,
+    "p": 41,
+    "prime": true,
+    "ge5": true
+   },
+   {
+    "m": 60,
+    "p": 61,
+    "prime": true,
+    "ge5": true
+   },
+   {
+    "m": 72,
+    "p": 73,
+    "prime": true,
+    "ge5": true
+   },
+   {
+    "m": 180,
+    "p": 181,
+    "prime": true,
+    "ge5": true
+   }
+  ],
+  "all_moduli_are_p_minus_1": false,
+  "all_moduli_distinct": true,
+  "sum_recip_lifted": 1.2777777777777777,
+  "k": 12,
+  "WITNESS_VALID": false
+ },
+ "outcome": "SAT_BUT_VERIFICATION_FAILED",
+ "finished": "2026-09-02T14:38:08Z"
+}

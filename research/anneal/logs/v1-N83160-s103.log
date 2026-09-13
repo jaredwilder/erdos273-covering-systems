@@ -1,0 +1,23 @@
+# anneal273 N=83160 K=57 S=1.633297 seed=103 secs=7500 noise=0.15 fix3=1
+# question-lock: /root/peer/anneal273/erdos273-covering-sat-ladder.json
+# pool: 3 5 6 8 9 11 14 15 18 20 21 30 33 35 36 44 54 56 63 90 99 105 120 135 140 165 168 189 198 210 216 231 270 308 315 330 378 440 495 504 660 1080 1155 1188 1260 1485 1848 2079 2310 3780 4158 4620 7560 8316 9240 11880 27720
+# NOTE: S<=1 means the pool cannot cover -- density floor.
+t=60 iter=4291584 cur=3188 run_best=966 global_best=841 restarts=3 perturbs=100
+t=120 iter=8634368 cur=1338 run_best=984 global_best=816 restarts=6 perturbs=211
+t=180 iter=12899328 cur=5651 run_best=1102 global_best=795 restarts=9 perturbs=312
+t=240 iter=17268736 cur=4003 run_best=1014 global_best=795 restarts=12 perturbs=419
+t=300 iter=21608448 cur=2941 run_best=908 global_best=795 restarts=15 perturbs=524
+t=360 iter=25604096 cur=2532 run_best=960 global_best=795 restarts=18 perturbs=620
+t=420 iter=29571072 cur=2366 run_best=850 global_best=792 restarts=21 perturbs=710
+t=480 iter=32748544 cur=4701 run_best=1010 global_best=792 restarts=23 perturbs=784
+t=540 iter=36800512 cur=2390 run_best=996 global_best=792 restarts=26 perturbs=883
+t=600 iter=41169920 cur=2828 run_best=1166 global_best=792 restarts=29 perturbs=989
+t=660 iter=45551616 cur=2652 run_best=891 global_best=792 restarts=32 perturbs=1092
+t=720 iter=49841152 cur=3279 run_best=992 global_best=792 restarts=35 perturbs=1193
+t=780 iter=54181888 cur=1977 run_best=995 global_best=792 restarts=38 perturbs=1299
+t=840 iter=58257408 cur=2616 run_best=885 global_best=792 restarts=41 perturbs=1402
+t=900 iter=62456832 cur=1936 run_best=947 global_best=792 restarts=44 perturbs=1497
+t=960 iter=66583552 cur=4163 run_best=1002 global_best=792 restarts=47 perturbs=1596
+t=1020 iter=69990400 cur=2201 run_best=1081 global_best=789 restarts=50 perturbs=1675
+t=1080 iter=73782272 cur=1883 run_best=1056 global_best=789 restarts=52 perturbs=1764
+t=1140 iter=77484032 cur=1963 run_best=893 global_best=789 restarts=55 perturbs=1853

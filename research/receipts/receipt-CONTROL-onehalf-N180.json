@@ -1,0 +1,116 @@
+{
+ "tag": "CONTROL-onehalf-N180",
+ "N": 180,
+ "mode": "onehalf",
+ "solver": "kissat",
+ "secs_cap": 60,
+ "question_lock": "/root/peer/sat273/erdos273-covering-sat-ladder.json",
+ "started": "2026-09-02T14:24:10Z",
+ "build_seconds": 0.01,
+ "meta": {
+  "N": 180,
+  "mode": "onehalf",
+  "pool_size": 11,
+  "sum_recip": 1.5555555555555556,
+  "amo_backend": "pysat",
+  "density_verdict": "density_ok",
+  "forced_moduli": [],
+  "symbreak": {
+   "h0": 2,
+   "half_swap": false,
+   "translate_half0": true
+  },
+  "vars": 690,
+  "x_vars": 468,
+  "clauses": 838,
+  "literals": 3295,
+  "cnf_bytes": 13485
+ },
+ "pool": [
+  2,
+  3,
+  5,
+  6,
+  9,
+  15,
+  18,
+  20,
+  30,
+  36,
+  90
+ ],
+ "free_pool": null,
+ "result": "SAT",
+ "solve_seconds": 0.07,
+ "halves": {
+  "0": [
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    9,
+    15
+   ],
+   [
+    3,
+    18
+   ],
+   [
+    11,
+    20
+   ],
+   [
+    3,
+    30
+   ],
+   [
+    9,
+    36
+   ],
+   [
+    45,
+    90
+   ]
+  ],
+  "1": []
+ },
+ "verification": {
+  "WITNESS_VALID": true,
+  "half0_covers_Z": true,
+  "half0_lcm": 180,
+  "moduli_half0": [
+   2,
+   3,
+   5,
+   6,
+   9,
+   15,
+   18,
+   20,
+   30,
+   36,
+   90
+  ],
+  "sum_recip": 1.5555555555555556,
+  "note": "ONE HALF ONLY - this is NOT an Erdos 273 witness"
+ },
+ "outcome": "WITNESS_UNVERIFIED->CHECKED",
+ "finished": "2026-09-02T14:24:10Z"
+}

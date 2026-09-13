@@ -1,0 +1,117 @@
+{
+ "instance": "half-B-alone",
+ "N": 180,
+ "pool": [
+  2,
+  3,
+  5,
+  6,
+  9,
+  15,
+  18,
+  20,
+  30,
+  36,
+  90
+ ],
+ "pool_size": 11,
+ "reciprocal_sum_S_B": 1.5555555555555556,
+ "need": 1.0,
+ "include_2": true,
+ "n_vars": 457,
+ "n_clauses": 838,
+ "solver": "kissat",
+ "cap_seconds": 120,
+ "emit_seconds": 0.0,
+ "solve_seconds": 0.0,
+ "exit_code": 10,
+ "result": "SAT",
+ "question_lock": "/root/peer/anneal273/erdos273-covering-sat-ladder.json",
+ "pairs": [
+  [
+   1,
+   2
+  ],
+  [
+   2,
+   3
+  ],
+  [
+   4,
+   5
+  ],
+  [
+   4,
+   6
+  ],
+  [
+   6,
+   9
+  ],
+  [
+   3,
+   15
+  ],
+  [
+   12,
+   18
+  ],
+  [
+   2,
+   20
+  ],
+  [
+   6,
+   30
+  ],
+  [
+   0,
+   36
+  ],
+  [
+   0,
+   90
+  ]
+ ],
+ "verification": {
+  "label": "kissat model N=180",
+  "n_classes": 11,
+  "moduli_distinct": true,
+  "all_in_H": true,
+  "not_in_H": [],
+  "primes_2m_plus_1": [
+   5,
+   7,
+   11,
+   13,
+   19,
+   31,
+   37,
+   41,
+   61,
+   73,
+   181
+  ],
+  "all_primes_ge_5": true,
+  "lcm": 180,
+  "covers_all_residues": true,
+  "uncovered_count": 0,
+  "first_uncovered": [],
+  "reciprocal_sum": 1.5555555555555556,
+  "VERDICT": "COVERING_VERIFIED"
+ },
+ "human": "1 mod 2; 2 mod 3; 4 mod 5; 4 mod 6; 6 mod 9; 3 mod 15; 12 mod 18; 2 mod 20; 6 mod 30; 0 mod 36; 0 mod 90",
+ "doubled_odd_lift": [
+  "3 mod 4",
+  "5 mod 6",
+  "9 mod 10",
+  "9 mod 12",
+  "13 mod 18",
+  "7 mod 30",
+  "25 mod 36",
+  "5 mod 40",
+  "13 mod 60",
+  "1 mod 72",
+  "1 mod 180"
+ ]
+}

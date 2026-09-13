@@ -1,0 +1,17 @@
+{
+ "event": "JOINT_FORMULATION_LANES_STOPPED_BY_REALLOCATION",
+ "stopped_at": "2026-09-02T15:45:30Z",
+ "reason": "Coordinator reallocation: the joint (two-halves-at-once) CNFs will not terminate; compute redirected to the density-after-split argument and hard-half-only instances.",
+ "formulation": "symmetric-two-halves",
+ "solver": "kissat 4.0.3-2, flags: -q --unsat --seed=0 --time=4200",
+ "lanes": [
+  {"N": 27720, "cpu_seconds_at_stop": 3333, "elapsed": "55:34", "cap_was": 4200, "verdict": "STOPPED_NO_VERDICT"},
+  {"N": 50400, "cpu_seconds_at_stop": 3333, "elapsed": "55:34", "cap_was": 4200, "verdict": "STOPPED_NO_VERDICT"},
+  {"N": 83160, "cpu_seconds_at_stop": 3082, "elapsed": "51:23", "cap_was": 4200, "verdict": "STOPPED_NO_VERDICT"},
+  {"N": 55440, "cpu_seconds_at_stop": 3082, "elapsed": "51:22", "cap_was": 4200, "verdict": "STOPPED_NO_VERDICT"}
+ ],
+ "HONESTY": "These are STOPPED_NO_VERDICT, deliberately NOT filed as TIMEOUT_AT_N. A cap was never reached; I killed them. What they DO establish, and all they establish: kissat --unsat consumed 3082-3333 seconds of real CPU (cpu==elapsed, verified, box load 44/32 with nice 10 not starving) on each of these four instances WITHOUT deciding them. That is a measured lower bound on instance difficulty, not evidence in either direction about satisfiability.",
+ "evidence_class": "COMPUTED_BOUNDED",
+ "unsat_source": null,
+ "supersedes_nothing": "The earlier batch-1 TIMEOUT_AT_N receipts at the 1200s cap remain valid and are unaffected."
+}

@@ -1,0 +1,76 @@
+{
+ "N": 360360,
+ "split_moduli": [
+  3,
+  5,
+  6,
+  9
+ ],
+ "manifest_n_cubes": 560,
+ "arm1_structural": {
+  "per_modulus": [
+   {
+    "h": 3,
+    "allowed_residues": [
+     0
+    ],
+    "branches": 2,
+    "admissible_cases": 2,
+    "exactly_one_match": true,
+    "violations": []
+   },
+   {
+    "h": 5,
+    "allowed_residues": [
+     0,
+     1,
+     2
+    ],
+    "branches": 4,
+    "admissible_cases": 4,
+    "exactly_one_match": true,
+    "violations": []
+   },
+   {
+    "h": 6,
+    "allowed_residues": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "branches": 7,
+    "admissible_cases": 7,
+    "exactly_one_match": true,
+    "violations": []
+   },
+   {
+    "h": 9,
+    "allowed_residues": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "branches": 10,
+    "admissible_cases": 10,
+    "exactly_one_match": true,
+    "violations": []
+   }
+  ],
+  "n_cubes_implied": 560,
+  "PARTITION": true
+ },
+ "cube_count_agrees": true,
+ "arm2_run": false,
+ "arm2_note": "NOT RUN -- no CNF supplied. Arm 1 alone assumes the at-most-one constraint and the symmetry units are in the file. Run Arm 2 on the box against the real CNF before trusting an UNSAT aggregate.",
+ "VERDICT": "PARTITION_PROVED",
+ "seconds": 0.0
+}

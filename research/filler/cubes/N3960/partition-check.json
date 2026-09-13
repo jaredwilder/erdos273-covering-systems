@@ -1,0 +1,68 @@
+{
+ "N": 3960,
+ "split_moduli": [
+  3,
+  5,
+  8
+ ],
+ "manifest_n_cubes": 72,
+ "arm1_structural": {
+  "per_modulus": [
+   {
+    "h": 3,
+    "allowed_residues": [
+     0
+    ],
+    "branches": 2,
+    "admissible_cases": 2,
+    "exactly_one_match": true,
+    "violations": []
+   },
+   {
+    "h": 5,
+    "allowed_residues": [
+     0,
+     1,
+     2
+    ],
+    "branches": 4,
+    "admissible_cases": 4,
+    "exactly_one_match": true,
+    "violations": []
+   },
+   {
+    "h": 8,
+    "allowed_residues": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "branches": 9,
+    "admissible_cases": 9,
+    "exactly_one_match": true,
+    "violations": []
+   }
+  ],
+  "n_cubes_implied": 72,
+  "PARTITION": true
+ },
+ "cube_count_agrees": true,
+ "arm2_against_cnf": {
+  "CNF_INTEGRITY": true,
+  "clauses": 12383,
+  "pairs_checked": 41,
+  "pairs_refuted": 41,
+  "killed_residues_checked": 4,
+  "killed_residues_refuted": 4,
+  "failures": [],
+  "AMO_AND_UNITS_HOLD": true
+ },
+ "arm2_run": true,
+ "VERDICT": "PARTITION_PROVED",
+ "seconds": 0.1
+}

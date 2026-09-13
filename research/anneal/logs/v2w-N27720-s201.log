@@ -1,0 +1,19 @@
+# anneal273w(WEIGHTED) N=27720 K=42 S=1.587338 seed=201 secs=7300 noise=0.15 fix3=1
+# question-lock: /root/peer/anneal273/erdos273-covering-sat-ladder.json
+# pool: 3 5 6 8 9 11 14 15 18 20 21 30 33 35 36 44 56 63 90 99 105 120 140 165 168 198 210 231 308 315 330 440 495 504 660 1155 1260 1848 2310 4620 9240 27720
+# NOTE: S<=1 means the pool cannot cover -- density floor.
+t=60 iter=9665536 cur=1151 run_best=573 global_best=570 restarts=9 perturbs=316
+t=120 iter=19126272 cur=2422 run_best=583 global_best=570 restarts=18 perturbs=626
+t=180 iter=28867584 cur=626 run_best=597 global_best=570 restarts=28 perturbs=944
+t=240 iter=38583296 cur=1267 run_best=591 global_best=570 restarts=37 perturbs=1261
+t=300 iter=48345088 cur=3546 run_best=599 global_best=570 restarts=47 perturbs=1578
+t=360 iter=58087424 cur=877 run_best=604 global_best=570 restarts=56 perturbs=1892
+t=420 iter=67812352 cur=992 run_best=643 global_best=570 restarts=66 perturbs=2201
+t=480 iter=77408256 cur=1503 run_best=581 global_best=570 restarts=75 perturbs=2514
+t=540 iter=87057408 cur=1516 run_best=599 global_best=570 restarts=85 perturbs=2834
+t=600 iter=96582656 cur=1312 run_best=699 global_best=570 restarts=94 perturbs=3143
+t=660 iter=105799680 cur=1336 run_best=641 global_best=570 restarts=103 perturbs=3450
+t=720 iter=115062784 cur=1417 run_best=572 global_best=570 restarts=112 perturbs=3750
+t=780 iter=122841088 cur=1182 run_best=624 global_best=570 restarts=120 perturbs=4001
+t=840 iter=130467840 cur=1754 run_best=613 global_best=570 restarts=127 perturbs=4252
+t=900 iter=138115072 cur=919 run_best=608 global_best=570 restarts=134 perturbs=4491

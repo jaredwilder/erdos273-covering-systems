@@ -1,0 +1,1426 @@
+{
+ "N": 3960,
+ "formulation": "hard-half-only",
+ "generated": "2026-09-02T21:54:49Z",
+ "generator": "filler/f273_cube_split.py",
+ "base_cnf": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\evidence\\msl-machine\\campaigns\\erdos273-sat-2026-09-02\\filler\\cnf\\hard-half-only-N3960.cnf",
+ "base_cnf_sha256": "bf74e29f0a855d8e961ec7a536c2c5a379595ab1a8add7d8603a836e103392ee",
+ "base_vars": 8483,
+ "base_clauses": 12383,
+ "pool_size": 22,
+ "pool": [
+  3,
+  5,
+  6,
+  8,
+  9,
+  11,
+  15,
+  18,
+  20,
+  30,
+  33,
+  36,
+  44,
+  90,
+  99,
+  120,
+  165,
+  198,
+  330,
+  440,
+  495,
+  660
+ ],
+ "split_moduli": [
+  3,
+  5,
+  8
+ ],
+ "branch_factors": {
+  "3": 2,
+  "5": 4,
+  "8": 9
+ },
+ "allowed_residues": {
+  "3": [
+   0
+  ],
+  "5": [
+   0,
+   1,
+   2
+  ],
+  "8": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ]
+ },
+ "n_cubes": 72,
+ "window": [
+  64,
+  256
+ ],
+ "window_fit": "in_window",
+ "partition_claim": "the split is a PARTITION of the model space: branches of one modulus are pairwise exclusive by the at-most-one constraint and jointly exhaustive by the used/unused case split, so ALL cubes UNSAT => base UNSAT, and ANY cube SAT => base SAT",
+ "cubes": [
+  {
+   "cube_id": "c00000",
+   "file": "cube-c00000.cube",
+   "branch": {
+    "3": 0,
+    "5": 0,
+    "8": 0
+   },
+   "assumptions": [
+    1,
+    4,
+    15
+   ],
+   "n_lits": 3,
+   "sha256": "a5336f169a223a17d4c5d49e6e57dde4360dd019655bcd1a1b02895c33852169"
+  },
+  {
+   "cube_id": "c00001",
+   "file": "cube-c00001.cube",
+   "branch": {
+    "3": 0,
+    "5": 0,
+    "8": 1
+   },
+   "assumptions": [
+    1,
+    4,
+    16
+   ],
+   "n_lits": 3,
+   "sha256": "9f86f1d8b35da5c1c71a65990a2606c8faa7a689feac8b1fc678c8a1591bf03c"
+  },
+  {
+   "cube_id": "c00002",
+   "file": "cube-c00002.cube",
+   "branch": {
+    "3": 0,
+    "5": 0,
+    "8": 2
+   },
+   "assumptions": [
+    1,
+    4,
+    17
+   ],
+   "n_lits": 3,
+   "sha256": "31143716f68924fb734ea7f70217da10dc3aa9c3d88ad3d814805fd00fba605f"
+  },
+  {
+   "cube_id": "c00003",
+   "file": "cube-c00003.cube",
+   "branch": {
+    "3": 0,
+    "5": 0,
+    "8": 3
+   },
+   "assumptions": [
+    1,
+    4,
+    18
+   ],
+   "n_lits": 3,
+   "sha256": "6e67450fc4582768c5e99de5fff32da0801833c9750823f24f7e225b0c3f5a54"
+  },
+  {
+   "cube_id": "c00004",
+   "file": "cube-c00004.cube",
+   "branch": {
+    "3": 0,
+    "5": 0,
+    "8": 4
+   },
+   "assumptions": [
+    1,
+    4,
+    19
+   ],
+   "n_lits": 3,
+   "sha256": "d172e5e9b7f2bad81af126f3e75a6920c112c599960f77c05dbf114b1215cd39"
+  },
+  {
+   "cube_id": "c00005",
+   "file": "cube-c00005.cube",
+   "branch": {
+    "3": 0,
+    "5": 0,
+    "8": 5
+   },
+   "assumptions": [
+    1,
+    4,
+    20
+   ],
+   "n_lits": 3,
+   "sha256": "504a5f7462554c38544c0f175b9027bcdf93d6e8ccce508c7a93548df442b9da"
+  },
+  {
+   "cube_id": "c00006",
+   "file": "cube-c00006.cube",
+   "branch": {
+    "3": 0,
+    "5": 0,
+    "8": 6
+   },
+   "assumptions": [
+    1,
+    4,
+    21
+   ],
+   "n_lits": 3,
+   "sha256": "a19b69a76849eee8467e881fdee0537b46d874766f8a7d5a67e0dc484f4cd9e3"
+  },
+  {
+   "cube_id": "c00007",
+   "file": "cube-c00007.cube",
+   "branch": {
+    "3": 0,
+    "5": 0,
+    "8": 7
+   },
+   "assumptions": [
+    1,
+    4,
+    22
+   ],
+   "n_lits": 3,
+   "sha256": "520512439b62609933d3bc7ddaea382fd0fa9f69bce9d445874950e8857dab64"
+  },
+  {
+   "cube_id": "c00008",
+   "file": "cube-c00008.cube",
+   "branch": {
+    "3": 0,
+    "5": 0,
+    "8": "unused"
+   },
+   "assumptions": [
+    1,
+    4,
+    -15,
+    -16,
+    -17,
+    -18,
+    -19,
+    -20,
+    -21,
+    -22
+   ],
+   "n_lits": 10,
+   "sha256": "3ea3f3d9a1405698a6cbcafe8ef51c44c9204d55cfa1802afb23e5c21492edeb"
+  },
+  {
+   "cube_id": "c00009",
+   "file": "cube-c00009.cube",
+   "branch": {
+    "3": 0,
+    "5": 1,
+    "8": 0
+   },
+   "assumptions": [
+    1,
+    5,
+    15
+   ],
+   "n_lits": 3,
+   "sha256": "32072a4ffd677cffbfd7620d8f21c0e13d93c1904959378f0bd61a48489fd0e9"
+  },
+  {
+   "cube_id": "c00010",
+   "file": "cube-c00010.cube",
+   "branch": {
+    "3": 0,
+    "5": 1,
+    "8": 1
+   },
+   "assumptions": [
+    1,
+    5,
+    16
+   ],
+   "n_lits": 3,
+   "sha256": "67a42cd426b7f6c82a838c9010966d4d67d317f0dbcb2813268de8175b5593d6"
+  },
+  {
+   "cube_id": "c00011",
+   "file": "cube-c00011.cube",
+   "branch": {
+    "3": 0,
+    "5": 1,
+    "8": 2
+   },
+   "assumptions": [
+    1,
+    5,
+    17
+   ],
+   "n_lits": 3,
+   "sha256": "24a3e14bd68d550246b82fa833d28ea4d8604b286fa4bcb41cbce17666f35d6f"
+  },
+  {
+   "cube_id": "c00012",
+   "file": "cube-c00012.cube",
+   "branch": {
+    "3": 0,
+    "5": 1,
+    "8": 3
+   },
+   "assumptions": [
+    1,
+    5,
+    18
+   ],
+   "n_lits": 3,
+   "sha256": "7e0fc59f1248cda359eaf2835c16a5b2183a82a0aa2966ec0c1a803ec4522e23"
+  },
+  {
+   "cube_id": "c00013",
+   "file": "cube-c00013.cube",
+   "branch": {
+    "3": 0,
+    "5": 1,
+    "8": 4
+   },
+   "assumptions": [
+    1,
+    5,
+    19
+   ],
+   "n_lits": 3,
+   "sha256": "4ca1bb0066eb9be6fad96d857c62b873b84ea362aa5690df3e7482a732abcb1d"
+  },
+  {
+   "cube_id": "c00014",
+   "file": "cube-c00014.cube",
+   "branch": {
+    "3": 0,
+    "5": 1,
+    "8": 5
+   },
+   "assumptions": [
+    1,
+    5,
+    20
+   ],
+   "n_lits": 3,
+   "sha256": "d2deeafedfcd2afb1e0e19b1db251ba630038f0cf5207b7ff97ef81b29a2c57a"
+  },
+  {
+   "cube_id": "c00015",
+   "file": "cube-c00015.cube",
+   "branch": {
+    "3": 0,
+    "5": 1,
+    "8": 6
+   },
+   "assumptions": [
+    1,
+    5,
+    21
+   ],
+   "n_lits": 3,
+   "sha256": "5ca60295b33edd0871b0a22f9455fdc020a043e2fe497c07947f99e45899ed8a"
+  },
+  {
+   "cube_id": "c00016",
+   "file": "cube-c00016.cube",
+   "branch": {
+    "3": 0,
+    "5": 1,
+    "8": 7
+   },
+   "assumptions": [
+    1,
+    5,
+    22
+   ],
+   "n_lits": 3,
+   "sha256": "0fd92cc04b650817d4dddac01086644efb756629047835cb7a6bb6cb18a09d42"
+  },
+  {
+   "cube_id": "c00017",
+   "file": "cube-c00017.cube",
+   "branch": {
+    "3": 0,
+    "5": 1,
+    "8": "unused"
+   },
+   "assumptions": [
+    1,
+    5,
+    -15,
+    -16,
+    -17,
+    -18,
+    -19,
+    -20,
+    -21,
+    -22
+   ],
+   "n_lits": 10,
+   "sha256": "a254c2f3e14c307965cbd7cf6fe661a8e987d60d777897ab47ad6d51d4f9690f"
+  },
+  {
+   "cube_id": "c00018",
+   "file": "cube-c00018.cube",
+   "branch": {
+    "3": 0,
+    "5": 2,
+    "8": 0
+   },
+   "assumptions": [
+    1,
+    6,
+    15
+   ],
+   "n_lits": 3,
+   "sha256": "3336622e3d530ddad5badc868609d2d46ac158b03813fa5db6d0c9ce60d3416d"
+  },
+  {
+   "cube_id": "c00019",
+   "file": "cube-c00019.cube",
+   "branch": {
+    "3": 0,
+    "5": 2,
+    "8": 1
+   },
+   "assumptions": [
+    1,
+    6,
+    16
+   ],
+   "n_lits": 3,
+   "sha256": "c1494fa3c6de70f8291704afaa61ca810d862045ef366558e5ee07d921e913e6"
+  },
+  {
+   "cube_id": "c00020",
+   "file": "cube-c00020.cube",
+   "branch": {
+    "3": 0,
+    "5": 2,
+    "8": 2
+   },
+   "assumptions": [
+    1,
+    6,
+    17
+   ],
+   "n_lits": 3,
+   "sha256": "0f19eb9c95cbf395fdd6ae83d82155554afa69777c07dfc9efdcf28c49cc8e6a"
+  },
+  {
+   "cube_id": "c00021",
+   "file": "cube-c00021.cube",
+   "branch": {
+    "3": 0,
+    "5": 2,
+    "8": 3
+   },
+   "assumptions": [
+    1,
+    6,
+    18
+   ],
+   "n_lits": 3,
+   "sha256": "35bd17d7fcf30e257b1f77d8fd79d98e7e64661e3962b075b4c390cd000fd51a"
+  },
+  {
+   "cube_id": "c00022",
+   "file": "cube-c00022.cube",
+   "branch": {
+    "3": 0,
+    "5": 2,
+    "8": 4
+   },
+   "assumptions": [
+    1,
+    6,
+    19
+   ],
+   "n_lits": 3,
+   "sha256": "2519ad7fb435dc2f3e32b3630ce39ac86da2ea5ab88f9ae892c98111843d2911"
+  },
+  {
+   "cube_id": "c00023",
+   "file": "cube-c00023.cube",
+   "branch": {
+    "3": 0,
+    "5": 2,
+    "8": 5
+   },
+   "assumptions": [
+    1,
+    6,
+    20
+   ],
+   "n_lits": 3,
+   "sha256": "67cef402a9f23a2b683a8d07b1b49ffceaa51de9e30f745b8fef4ee54df92ce0"
+  },
+  {
+   "cube_id": "c00024",
+   "file": "cube-c00024.cube",
+   "branch": {
+    "3": 0,
+    "5": 2,
+    "8": 6
+   },
+   "assumptions": [
+    1,
+    6,
+    21
+   ],
+   "n_lits": 3,
+   "sha256": "874092d191bd028afde7ac844fa18bbcf35d20391b170de68abecd2877ad6e1e"
+  },
+  {
+   "cube_id": "c00025",
+   "file": "cube-c00025.cube",
+   "branch": {
+    "3": 0,
+    "5": 2,
+    "8": 7
+   },
+   "assumptions": [
+    1,
+    6,
+    22
+   ],
+   "n_lits": 3,
+   "sha256": "1aa0bcd338e40a1d07df1b63b11585a55f1f3e7b5ca9572ae1285abdb8dc79b4"
+  },
+  {
+   "cube_id": "c00026",
+   "file": "cube-c00026.cube",
+   "branch": {
+    "3": 0,
+    "5": 2,
+    "8": "unused"
+   },
+   "assumptions": [
+    1,
+    6,
+    -15,
+    -16,
+    -17,
+    -18,
+    -19,
+    -20,
+    -21,
+    -22
+   ],
+   "n_lits": 10,
+   "sha256": "cb3f9d20a8a776b431757b1458d86cdb2e9b16ebe78c41c7c16e9fc01fdd68b5"
+  },
+  {
+   "cube_id": "c00027",
+   "file": "cube-c00027.cube",
+   "branch": {
+    "3": 0,
+    "5": "unused",
+    "8": 0
+   },
+   "assumptions": [
+    1,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    15
+   ],
+   "n_lits": 7,
+   "sha256": "79b8cceec00a5ff10bf2f20b65a9c9831b47111c162f2f7b28654557fab082ef"
+  },
+  {
+   "cube_id": "c00028",
+   "file": "cube-c00028.cube",
+   "branch": {
+    "3": 0,
+    "5": "unused",
+    "8": 1
+   },
+   "assumptions": [
+    1,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    16
+   ],
+   "n_lits": 7,
+   "sha256": "ce062bf533bdfcea3309ad9df49d820012d59135d4ceba2750a741ac180cc464"
+  },
+  {
+   "cube_id": "c00029",
+   "file": "cube-c00029.cube",
+   "branch": {
+    "3": 0,
+    "5": "unused",
+    "8": 2
+   },
+   "assumptions": [
+    1,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    17
+   ],
+   "n_lits": 7,
+   "sha256": "a5595903dd7719764645f3c8212b88f589bd9c45fc564335ac1242e13484f6df"
+  },
+  {
+   "cube_id": "c00030",
+   "file": "cube-c00030.cube",
+   "branch": {
+    "3": 0,
+    "5": "unused",
+    "8": 3
+   },
+   "assumptions": [
+    1,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    18
+   ],
+   "n_lits": 7,
+   "sha256": "a2e94081c5cf76395f749ccecbc8b90cb38f8c396b18edd40a90142886214b41"
+  },
+  {
+   "cube_id": "c00031",
+   "file": "cube-c00031.cube",
+   "branch": {
+    "3": 0,
+    "5": "unused",
+    "8": 4
+   },
+   "assumptions": [
+    1,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    19
+   ],
+   "n_lits": 7,
+   "sha256": "8b6e3722828958ef852855efd48b3001639decdc0e6b9abae10d7aea81c6d78e"
+  },
+  {
+   "cube_id": "c00032",
+   "file": "cube-c00032.cube",
+   "branch": {
+    "3": 0,
+    "5": "unused",
+    "8": 5
+   },
+   "assumptions": [
+    1,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    20
+   ],
+   "n_lits": 7,
+   "sha256": "7c573c8ecc3fedb7ce7263e577f80280af4c239903a2256477d0e97be564e4cc"
+  },
+  {
+   "cube_id": "c00033",
+   "file": "cube-c00033.cube",
+   "branch": {
+    "3": 0,
+    "5": "unused",
+    "8": 6
+   },
+   "assumptions": [
+    1,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    21
+   ],
+   "n_lits": 7,
+   "sha256": "9548024bab082027e5cf1d3cc161a3d7fb0956b34d882ae78cc37c7c18dd753a"
+  },
+  {
+   "cube_id": "c00034",
+   "file": "cube-c00034.cube",
+   "branch": {
+    "3": 0,
+    "5": "unused",
+    "8": 7
+   },
+   "assumptions": [
+    1,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    22
+   ],
+   "n_lits": 7,
+   "sha256": "0362487966979179ed966781e6746510f1a2468de6001b93c37acb1ec009d6ff"
+  },
+  {
+   "cube_id": "c00035",
+   "file": "cube-c00035.cube",
+   "branch": {
+    "3": 0,
+    "5": "unused",
+    "8": "unused"
+   },
+   "assumptions": [
+    1,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    -15,
+    -16,
+    -17,
+    -18,
+    -19,
+    -20,
+    -21,
+    -22
+   ],
+   "n_lits": 14,
+   "sha256": "7c20cbf46c1b4696d889ee2eac90b53309ec68fe86f66f72237a66e6d40a8272"
+  },
+  {
+   "cube_id": "c00036",
+   "file": "cube-c00036.cube",
+   "branch": {
+    "3": "unused",
+    "5": 0,
+    "8": 0
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    4,
+    15
+   ],
+   "n_lits": 5,
+   "sha256": "a12a6d2bdcc2b0d7e9fedf7d2263f849506f4a5fc98f31fbaaaab811fed502ae"
+  },
+  {
+   "cube_id": "c00037",
+   "file": "cube-c00037.cube",
+   "branch": {
+    "3": "unused",
+    "5": 0,
+    "8": 1
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    4,
+    16
+   ],
+   "n_lits": 5,
+   "sha256": "de4b927d40b187fbd1c1deac826a439140e2eef1cbdeea20ced13cdf2c99a1b7"
+  },
+  {
+   "cube_id": "c00038",
+   "file": "cube-c00038.cube",
+   "branch": {
+    "3": "unused",
+    "5": 0,
+    "8": 2
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    4,
+    17
+   ],
+   "n_lits": 5,
+   "sha256": "6716c784e6c65bccd0d8c512606f46e593cf50e3ee91a87da18d4c7184a855d0"
+  },
+  {
+   "cube_id": "c00039",
+   "file": "cube-c00039.cube",
+   "branch": {
+    "3": "unused",
+    "5": 0,
+    "8": 3
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    4,
+    18
+   ],
+   "n_lits": 5,
+   "sha256": "fe28870cbc049b9b4569cfb4cbf278281d111479966645d8211d36d11bf5a4a5"
+  },
+  {
+   "cube_id": "c00040",
+   "file": "cube-c00040.cube",
+   "branch": {
+    "3": "unused",
+    "5": 0,
+    "8": 4
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    4,
+    19
+   ],
+   "n_lits": 5,
+   "sha256": "62094b9ac6c291212561b1de5f4d3402a921ae4530d5ccfa66dcdd2a9f2d1499"
+  },
+  {
+   "cube_id": "c00041",
+   "file": "cube-c00041.cube",
+   "branch": {
+    "3": "unused",
+    "5": 0,
+    "8": 5
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    4,
+    20
+   ],
+   "n_lits": 5,
+   "sha256": "fbb2ba47b804f3c4340962c893f62fc3735fdc5b1ef18805fa5c15dffc5422b4"
+  },
+  {
+   "cube_id": "c00042",
+   "file": "cube-c00042.cube",
+   "branch": {
+    "3": "unused",
+    "5": 0,
+    "8": 6
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    4,
+    21
+   ],
+   "n_lits": 5,
+   "sha256": "03ac9ed77bddc5221c28649694479263918f385b884719e90ec402bc10e6cdd4"
+  },
+  {
+   "cube_id": "c00043",
+   "file": "cube-c00043.cube",
+   "branch": {
+    "3": "unused",
+    "5": 0,
+    "8": 7
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    4,
+    22
+   ],
+   "n_lits": 5,
+   "sha256": "c3022f2e866ee119f4308da08e0672e91170159f4f64a46889995e3f07070553"
+  },
+  {
+   "cube_id": "c00044",
+   "file": "cube-c00044.cube",
+   "branch": {
+    "3": "unused",
+    "5": 0,
+    "8": "unused"
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    4,
+    -15,
+    -16,
+    -17,
+    -18,
+    -19,
+    -20,
+    -21,
+    -22
+   ],
+   "n_lits": 12,
+   "sha256": "b0ec738d489b5d97c05ea5d877d97b83faa0a555195cc364b756e545401ab359"
+  },
+  {
+   "cube_id": "c00045",
+   "file": "cube-c00045.cube",
+   "branch": {
+    "3": "unused",
+    "5": 1,
+    "8": 0
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    5,
+    15
+   ],
+   "n_lits": 5,
+   "sha256": "f0752a50c4a0dc34cfa676af700d8b80a4ec4743b88cbee96e8178b2c450a120"
+  },
+  {
+   "cube_id": "c00046",
+   "file": "cube-c00046.cube",
+   "branch": {
+    "3": "unused",
+    "5": 1,
+    "8": 1
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    5,
+    16
+   ],
+   "n_lits": 5,
+   "sha256": "a1574545a81fc9744c31474f88f960fe15265dc2eb53be277f4a4c0725163ad7"
+  },
+  {
+   "cube_id": "c00047",
+   "file": "cube-c00047.cube",
+   "branch": {
+    "3": "unused",
+    "5": 1,
+    "8": 2
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    5,
+    17
+   ],
+   "n_lits": 5,
+   "sha256": "7861a7181119e77a1ea1dbadd0cd6333744bd12ef6e0d45c8b1593a56b34e4ed"
+  },
+  {
+   "cube_id": "c00048",
+   "file": "cube-c00048.cube",
+   "branch": {
+    "3": "unused",
+    "5": 1,
+    "8": 3
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    5,
+    18
+   ],
+   "n_lits": 5,
+   "sha256": "71b71d00b265b3c2a56fdf4a0f300fbf362f671495ec05d450e3456a3664d42e"
+  },
+  {
+   "cube_id": "c00049",
+   "file": "cube-c00049.cube",
+   "branch": {
+    "3": "unused",
+    "5": 1,
+    "8": 4
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    5,
+    19
+   ],
+   "n_lits": 5,
+   "sha256": "08d42a237fc575340e66622b0aa0347ea6319c6e7bc2464bf7b4a0f000ef6188"
+  },
+  {
+   "cube_id": "c00050",
+   "file": "cube-c00050.cube",
+   "branch": {
+    "3": "unused",
+    "5": 1,
+    "8": 5
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    5,
+    20
+   ],
+   "n_lits": 5,
+   "sha256": "ed18f81064a0e46e76e2af6da3ee53966a91f05c14cad1dd78d7873080f9266e"
+  },
+  {
+   "cube_id": "c00051",
+   "file": "cube-c00051.cube",
+   "branch": {
+    "3": "unused",
+    "5": 1,
+    "8": 6
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    5,
+    21
+   ],
+   "n_lits": 5,
+   "sha256": "bcefaaf508d163540c1b416f5211667bf2e46340501401eb2d8da218b618106f"
+  },
+  {
+   "cube_id": "c00052",
+   "file": "cube-c00052.cube",
+   "branch": {
+    "3": "unused",
+    "5": 1,
+    "8": 7
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    5,
+    22
+   ],
+   "n_lits": 5,
+   "sha256": "a1b446ddfa2ffb2419c1806e2032ff4a3bd9d84d2c043f1d707e09d9c9d734b8"
+  },
+  {
+   "cube_id": "c00053",
+   "file": "cube-c00053.cube",
+   "branch": {
+    "3": "unused",
+    "5": 1,
+    "8": "unused"
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    5,
+    -15,
+    -16,
+    -17,
+    -18,
+    -19,
+    -20,
+    -21,
+    -22
+   ],
+   "n_lits": 12,
+   "sha256": "d23ad88d93278c70d6789dcd742007767862034bbda42ef3137687c517087db8"
+  },
+  {
+   "cube_id": "c00054",
+   "file": "cube-c00054.cube",
+   "branch": {
+    "3": "unused",
+    "5": 2,
+    "8": 0
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    6,
+    15
+   ],
+   "n_lits": 5,
+   "sha256": "bebc07293182e1f2d004e1abaf3e4ae3aef5740fe1605e34d069b73c2841391c"
+  },
+  {
+   "cube_id": "c00055",
+   "file": "cube-c00055.cube",
+   "branch": {
+    "3": "unused",
+    "5": 2,
+    "8": 1
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    6,
+    16
+   ],
+   "n_lits": 5,
+   "sha256": "82130ac4232418c9b978b3772b1234add717d2a84c49e5fc65b744a9d924fe9b"
+  },
+  {
+   "cube_id": "c00056",
+   "file": "cube-c00056.cube",
+   "branch": {
+    "3": "unused",
+    "5": 2,
+    "8": 2
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    6,
+    17
+   ],
+   "n_lits": 5,
+   "sha256": "4432ec1b258b0ffc00615cd28cb802cf02c76859ced70f6b933534eb712e0078"
+  },
+  {
+   "cube_id": "c00057",
+   "file": "cube-c00057.cube",
+   "branch": {
+    "3": "unused",
+    "5": 2,
+    "8": 3
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    6,
+    18
+   ],
+   "n_lits": 5,
+   "sha256": "57d64fc61ba55841f20edfdda1a2b8a84f13910a81d109bec77fe147aeda162f"
+  },
+  {
+   "cube_id": "c00058",
+   "file": "cube-c00058.cube",
+   "branch": {
+    "3": "unused",
+    "5": 2,
+    "8": 4
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    6,
+    19
+   ],
+   "n_lits": 5,
+   "sha256": "62378deb0c427eda9426e2977f719cc0a89287c5563d72d7a0c193bd78855de3"
+  },
+  {
+   "cube_id": "c00059",
+   "file": "cube-c00059.cube",
+   "branch": {
+    "3": "unused",
+    "5": 2,
+    "8": 5
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    6,
+    20
+   ],
+   "n_lits": 5,
+   "sha256": "3e1c6dd14db124a03103dd7a6c28cda14539f60218cf9f744363cfeca0f3e439"
+  },
+  {
+   "cube_id": "c00060",
+   "file": "cube-c00060.cube",
+   "branch": {
+    "3": "unused",
+    "5": 2,
+    "8": 6
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    6,
+    21
+   ],
+   "n_lits": 5,
+   "sha256": "20cb451fbe097c32e8b4923c10f4dff6de0e64aa0d0b3954ade840d57a9ee88a"
+  },
+  {
+   "cube_id": "c00061",
+   "file": "cube-c00061.cube",
+   "branch": {
+    "3": "unused",
+    "5": 2,
+    "8": 7
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    6,
+    22
+   ],
+   "n_lits": 5,
+   "sha256": "e35bdee585124a0db8e8f07f890b2be6bf4d08c2859863d9f2cf8dd53319aa80"
+  },
+  {
+   "cube_id": "c00062",
+   "file": "cube-c00062.cube",
+   "branch": {
+    "3": "unused",
+    "5": 2,
+    "8": "unused"
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    6,
+    -15,
+    -16,
+    -17,
+    -18,
+    -19,
+    -20,
+    -21,
+    -22
+   ],
+   "n_lits": 12,
+   "sha256": "c73659c8244c664617577f6d689e537bd11ce568c8ecf9bb00259a5c6122df70"
+  },
+  {
+   "cube_id": "c00063",
+   "file": "cube-c00063.cube",
+   "branch": {
+    "3": "unused",
+    "5": "unused",
+    "8": 0
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    15
+   ],
+   "n_lits": 9,
+   "sha256": "631f5aff81256771f8e13c750c68a9806f94ab8cd772a52150023d98dd97e25e"
+  },
+  {
+   "cube_id": "c00064",
+   "file": "cube-c00064.cube",
+   "branch": {
+    "3": "unused",
+    "5": "unused",
+    "8": 1
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    16
+   ],
+   "n_lits": 9,
+   "sha256": "6c054a0ce4c56a8c01ef6d1ca6f6099b8c9ff6a93c9d2e2355d636f80879fc82"
+  },
+  {
+   "cube_id": "c00065",
+   "file": "cube-c00065.cube",
+   "branch": {
+    "3": "unused",
+    "5": "unused",
+    "8": 2
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    17
+   ],
+   "n_lits": 9,
+   "sha256": "feed94e4297445c5a70fc0646b73262970edaf6139fd6fb3c8aeb99660ec505f"
+  },
+  {
+   "cube_id": "c00066",
+   "file": "cube-c00066.cube",
+   "branch": {
+    "3": "unused",
+    "5": "unused",
+    "8": 3
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    18
+   ],
+   "n_lits": 9,
+   "sha256": "5caf26fe849d375ab98378835ad21359e29c724f030c7fad4b93096bc96c13e0"
+  },
+  {
+   "cube_id": "c00067",
+   "file": "cube-c00067.cube",
+   "branch": {
+    "3": "unused",
+    "5": "unused",
+    "8": 4
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    19
+   ],
+   "n_lits": 9,
+   "sha256": "b9bbef8982b41085820983846e6c91da9d8a2b306501deda5605cb663b4389da"
+  },
+  {
+   "cube_id": "c00068",
+   "file": "cube-c00068.cube",
+   "branch": {
+    "3": "unused",
+    "5": "unused",
+    "8": 5
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    20
+   ],
+   "n_lits": 9,
+   "sha256": "b552e2e6cd736a07862f99aed704e6066ac6847b6199b1f23aa1429af00cf3d6"
+  },
+  {
+   "cube_id": "c00069",
+   "file": "cube-c00069.cube",
+   "branch": {
+    "3": "unused",
+    "5": "unused",
+    "8": 6
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    21
+   ],
+   "n_lits": 9,
+   "sha256": "497456ffca369e2da2732b71002acd25a11d9de0e4dbdc7f14f1dd9b8ae1c1b2"
+  },
+  {
+   "cube_id": "c00070",
+   "file": "cube-c00070.cube",
+   "branch": {
+    "3": "unused",
+    "5": "unused",
+    "8": 7
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    22
+   ],
+   "n_lits": 9,
+   "sha256": "ab6003404441f095fefec51d0e824e68a5a671ef949fdb26790e916d9e69367d"
+  },
+  {
+   "cube_id": "c00071",
+   "file": "cube-c00071.cube",
+   "branch": {
+    "3": "unused",
+    "5": "unused",
+    "8": "unused"
+   },
+   "assumptions": [
+    -1,
+    -2,
+    -3,
+    -4,
+    -5,
+    -6,
+    -7,
+    -8,
+    -15,
+    -16,
+    -17,
+    -18,
+    -19,
+    -20,
+    -21,
+    -22
+   ],
+   "n_lits": 16,
+   "sha256": "c80d10913164b7174cf4d13cffbf332a90aa582cd48301fbf981dee16c3fa26b"
+  }
+ ]
+}

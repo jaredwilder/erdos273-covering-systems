@@ -1,0 +1,57 @@
+=== N=3960  |pool|=22  S_B=1.3629 ===
+  mod 8     free/class=0.8505  need/class=0.1495  need total=1.1960  targetable=4.0990  -> feasible by counting
+  mod 9     free/class=0.4909  need/class=0.5091  need total=4.5818  targetable=7.8477  -> feasible by counting
+  mod 5     free/class=0.9785  need/class=0.0215  need total=0.1073  targetable=1.9217  -> feasible by counting
+  mod 11    free/class=1.1889  need/class=0.0000  need total=0.0000  targetable=1.9139  -> feasible by counting
+
+=== N=27720  |pool|=42  S_B=1.5873 ===
+  mod 8     free/class=0.9605  need/class=0.0395  need total=0.3163  targetable=5.0150  -> feasible by counting
+  mod 9     free/class=0.6192  need/class=0.3808  need total=3.4276  targetable=8.7136  -> feasible by counting
+  mod 5     free/class=1.1474  need/class=0.0000  need total=0.0000  targetable=2.1999  -> feasible by counting
+  mod 7     free/class=1.3629  need/class=0.0000  need total=0.0000  targetable=1.5712  -> feasible by counting
+  mod 11    free/class=1.4036  need/class=0.0000  need total=0.0000  targetable=2.0214  -> feasible by counting
+
+=== N=55440  |pool|=51  S_B=1.6197 ===
+  mod 16    free/class=0.9605  need/class=0.0395  need total=0.6326  targetable=10.5481  -> feasible by counting
+  mod 9     free/class=0.6248  need/class=0.3752  need total=3.3765  targetable=8.9539  -> feasible by counting
+  mod 5     free/class=1.1788  need/class=0.0000  need total=0.0000  targetable=2.2048  -> feasible by counting
+  mod 7     free/class=1.3904  need/class=0.0000  need total=0.0000  targetable=1.6052  -> feasible by counting
+  mod 11    free/class=1.4290  need/class=0.0000  need total=0.0000  targetable=2.0982  -> feasible by counting
+
+=== N=83160  |pool|=57  S_B=1.6333 ===
+  mod 8     free/class=0.9743  need/class=0.0257  need total=0.2055  targetable=5.2719  -> feasible by counting
+  mod 27    free/class=0.6192  need/class=0.3808  need total=10.2828  targetable=27.3818  -> feasible by counting
+  mod 5     free/class=1.1801  need/class=0.0000  need total=0.0000  targetable=2.2658  -> feasible by counting
+  mod 7     free/class=1.3997  need/class=0.0000  need total=0.0000  targetable=1.6354  -> feasible by counting
+  mod 11    free/class=1.4471  need/class=0.0000  need total=0.0000  targetable=2.0483  -> feasible by counting
+
+=== N=166320  |pool|=70  S_B=1.6658 ===
+  mod 16    free/class=0.9743  need/class=0.0257  need total=0.4110  targetable=11.0641  -> feasible by counting
+  mod 27    free/class=0.6248  need/class=0.3752  need total=10.1294  targetable=28.1065  -> feasible by counting
+  mod 5     free/class=1.2116  need/class=0.0000  need total=0.0000  targetable=2.2713  -> feasible by counting
+  mod 7     free/class=1.4272  need/class=0.0000  need total=0.0000  targetable=1.6701  -> feasible by counting
+  mod 11    free/class=1.4726  need/class=0.0000  need total=0.0000  targetable=2.1259  -> feasible by counting
+
+=== N=332640  |pool|=79  S_B=1.6860 ===
+  mod 32    free/class=0.9743  need/class=0.0257  need total=0.8219  targetable=22.7751  -> feasible by counting
+  mod 27    free/class=0.6293  need/class=0.3707  need total=10.0088  targetable=28.5318  -> feasible by counting
+  mod 5     free/class=1.2314  need/class=0.0000  need total=0.0000  targetable=2.2730  -> feasible by counting
+  mod 7     free/class=1.4427  need/class=0.0000  need total=0.0000  targetable=1.7032  -> feasible by counting
+  mod 11    free/class=1.4914  need/class=0.0000  need total=0.0000  targetable=2.1410  -> feasible by counting
+
+=== N=360360  |pool|=78  S_B=1.7114 ===
+  mod 8     free/class=1.0137  need/class=0.0000  need total=0.0000  targetable=5.5818  -> feasible by counting
+  mod 9     free/class=0.6811  need/class=0.3189  need total=2.8702  targetable=9.2730  -> feasible by counting
+  mod 5     free/class=1.2444  need/class=0.0000  need total=0.0000  targetable=2.3350  -> feasible by counting
+  mod 7     free/class=1.4759  need/class=0.0000  need total=0.0000  targetable=1.6486  -> feasible by counting
+  mod 11    free/class=1.5218  need/class=0.0000  need total=0.0000  targetable=2.0863  -> feasible by counting
+  mod 13    free/class=1.5873  need/class=0.0000  need total=0.0000  targetable=1.6131  -> feasible by counting
+
+=== N=2162160  |pool|=131  S_B=1.7945 ===
+  mod 16    free/class=1.0285  need/class=0.0000  need total=0.0000  targetable=12.2551  -> feasible by counting
+  mod 27    free/class=0.6879  need/class=0.3121  need total=8.4274  targetable=29.8778  -> feasible by counting
+  mod 5     free/class=1.3112  need/class=0.0000  need total=0.0000  targetable=2.4161  -> feasible by counting
+  mod 7     free/class=1.5439  need/class=0.0000  need total=0.0000  targetable=1.7536  -> feasible by counting
+  mod 11    free/class=1.5948  need/class=0.0000  need total=0.0000  targetable=2.1967  -> feasible by counting
+  mod 13    free/class=1.6658  need/class=0.0000  need total=0.0000  targetable=1.6723  -> feasible by counting
+

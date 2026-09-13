@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "checks": {
+    "parity_split_identity_verified": true,
+    "selfridge_half_distinct": true,
+    "selfridge_verify_stride_sieve": true,
+    "selfridge_verify_independent": true,
+    "doubled_all_legal": true,
+    "doubled_all_divide_360": true,
+    "odd_class_fully_covered_mod360": true,
+    "even_class_untouched_mod360": true
+  },
+  "selfridge_search_nodes": 14,
+  "scope": "Parity identity and one-half covering controls; no two-half solution claimed",
+  "date": "2026-09-13"
+}

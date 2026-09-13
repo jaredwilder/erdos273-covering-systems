@@ -1,0 +1,138 @@
+{
+ "lane": "erdos273-sat-filler",
+ "version": "1.0.0",
+ "generated": "2026-09-02",
+ "purpose": "Cube-and-conquer on the Erdos 273 hard-half-only instances. This lane is the box's SLACK ABSORBER: it takes every core no other queue is using, and every unit of work is one cube, so a kill costs one cube and never a run.",
+ "root": "oracle/evidence/msl-machine/campaigns/erdos273-sat-2026-09-02/filler",
+
+ "preflight": [
+  {"step": "encoder faithfulness", "cmd": "python3 f273_hardhalf.py --selfcheck", "pass": "prints `3/3 MATCH against receipted box metadata`", "why": "the box's --mode hardhalf was lost with the box; this proves the reconstruction emits the same vars/x_vars/clauses/literals as the three receipted exports"},
+  {"step": "build the ceiling instance", "cmd": "python3 f273_hardhalf.py --N 360360", "expect": {"vars": 1270116, "x_vars": 846796, "clauses": 1630248, "literals": 30647850, "approx_bytes": 164407862, "approx_seconds": 150}, "why": "the 164 MB CNF is NOT in the repo; it is regenerated on the box in ~2.5 minutes"},
+  {"step": "split the ceiling instance", "cmd": "python3 f273_cube_split.py --N 360360 --cnf cnf/hard-half-only-N360360.cnf", "pass": "n_cubes 560, split_moduli [3,5,6,9]"},
+  {"step": "prove the partition, BOTH arms", "cmd": "python3 partition_check.py --N 360360 --cnf cnf/hard-half-only-N360360.cnf", "pass": "VERDICT PARTITION_PROVED with arm2_run true", "why": "MANDATORY before any UNSAT aggregate is believed. Arm 2 checks the at-most-one constraint and the symmetry units against the real bytes; without it the aggregation rule is an assertion."}
+ ],
+
+ "instances": [
+  {
+   "id": "N3960",
+   "N": 3960,
+   "role": "the cheapest decisive certificate on the ladder",
+   "cnf": "cnf/hard-half-only-N3960.cnf",
+   "cnf_sha256": "SEE cubes/N3960/manifest.json -> base_cnf_sha256",
+   "vars": 8483,
+   "live_vars": 5648,
+   "dead_half_vars": 2835,
+   "clauses": 12383,
+   "bytes": 448936,
+   "pool_size_minus_2": 22,
+   "sum_recip_minus_2": 1.3628787878787878,
+   "cubes": 72,
+   "split_moduli": [3, 5, 8],
+   "in_repo": true,
+   "drat": "REQUIRED -- 439 KB instance, proofs are cheap and drat-trim can actually finish. An UNSAT here without a verified proof is a solver claim, not a certificate.",
+   "secs_per_cube": 3600
+  },
+  {
+   "id": "N360360",
+   "N": 360360,
+   "role": "the ceiling shot -- best reciprocal slack (S=2.2114, +10.57%) under the 2M-variable cap",
+   "cnf": "cnf/hard-half-only-N360360.cnf",
+   "generate_on_box": "python3 f273_hardhalf.py --N 360360",
+   "vars": 1270116,
+   "live_vars": 1270116,
+   "clauses": 1630248,
+   "bytes": 164407862,
+   "pool_size_minus_2": 78,
+   "sum_recip_minus_2": 1.7114246864246865,
+   "cubes": 560,
+   "split_moduli": [3, 5, 6, 9],
+   "in_repo": false,
+   "in_repo_reason": "164 MB artefact; the encoder is deterministic, so the bytes are regenerated rather than committed. The cube manifest IS committed -- it depends only on the pool, not on the CNF.",
+   "drat": "OPTIONAL -- at this size a DRAT proof runs to multiple GB per cube (the lost box reached 5.1 GB on N=27720 without a verdict). Enable only on a cube that has already returned UNSAT quickly, then re-run it with the proof on.",
+   "secs_per_cube": 3600
+  }
+ ],
+
+ "command_template": {
+  "wrapper": "bash run_cube.sh <N> <cube_id> <secs> <solver> [drat]",
+  "examples": [
+   "bash run_cube.sh 3960 c00007 3600 cadical drat",
+   "bash run_cube.sh 360360 c00042 3600 kissat"
+  ],
+  "what_the_wrapper_does": [
+   "SKIPS the cube if its checkpoint already holds SAT or UNSAT (idempotent restart)",
+   "assembles base CNF + cube units into $FILLER_TMPDIR (default /dev/shm) with a corrected `p cnf` header -- solver-agnostic, no assumption interface needed",
+   "runs the solver under a wall-clock cap",
+   "runs drat-trim IN PLACE, while the assembled file still exists, when a DRAT proof was requested and the result was UNSAT",
+   "writes the per-cube checkpoint, then unlinks the assembled file"
+  ],
+  "raw_solver_lines": {
+   "cadical_drat": "cadical --no-binary -q -t <secs> <assembled.cnf> <cube>.drat",
+   "cadical": "cadical -q -t <secs> <assembled.cnf>",
+   "kissat": "kissat -q --time=<secs> <assembled.cnf>"
+  },
+  "assemble_only": "python3 mkcube.py --base cnf/hard-half-only-N<N>.cnf --cube cubes/N<N>/cube-<id>.cube --out /dev/shm/hh<N>-<id>.cnf",
+  "tmpfs_budget": "N=360360 assembles to ~164 MB per in-flight cube; 32 concurrent = ~5.3 GB of the box's 251 GB. Each is unlinked the moment its cube finishes."
+ },
+
+ "parallel_launch": {
+  "gnu_parallel": "cut -d- -f2 cubes/N360360/index.txt | sed 's/\\.cube//' | parallel -j 30 --nice 10 --joblog out/N360360/joblog.tsv bash run_cube.sh 360360 {} 3600 kissat",
+  "xargs": "python3 -c \"import json;print('\\n'.join(c['cube_id'] for c in json.load(open('cubes/N360360/manifest.json',encoding='utf-8'))['cubes']))\" | xargs -P 30 -I{} nice -n 10 bash run_cube.sh 360360 {} 3600 kissat",
+  "core_yielding": "-j is the ONLY knob the box runner needs. Raise it when other queues drain, lower it when they refill. Cubes in flight when -j drops are killed and re-run from their checkpoint later; nothing is lost."
+ },
+
+ "outputs": {
+  "per_cube_checkpoint": "out/N<N>/<cube_id>.json",
+  "checkpoint_fields": ["N", "cube_id", "result", "seconds", "exit_code", "solver", "solverlog", "proof", "proof_sha256", "cube_sha256", "drat_verified", "finished"],
+  "solver_log": "out/N<N>/<cube_id>.solverlog",
+  "drat_proof": "out/N<N>/<cube_id>.drat",
+  "drat_trim_log": "out/N<N>/<cube_id>.drattrim",
+  "witness_on_sat": "out/N<N>/witness-<cube_id>.json",
+  "aggregate": "out/N<N>/AGGREGATE-N<N>.json"
+ },
+
+ "verdict_rules": {
+  "SAT": "solver exit 10. The cube's model is a model of the base instance (the split is a partition, so no restriction was lost).",
+  "UNSAT": "solver exit 20. With DRAT on, it is not a CERTIFICATE until `drat_verified` is true.",
+  "TIMEOUT": "any other exit after the cap. ESTABLISHES NOTHING. Not weak evidence of UNSAT.",
+  "STOPPED_NO_VERDICT": "exit 137/143 (SIGKILL/SIGTERM). A killed process is NOT a timeout and NOT a verdict. The campaign refiled four receipts over exactly this distinction on 2026-09-02; do not lose it again."
+ },
+
+ "aggregation": {
+  "cmd": "python3 aggregate.py --N <N>",
+  "any_cube_SAT": {
+   "verdict": "SAT_HARD_HALF",
+   "meaning": "a distinct-moduli covering of Z drawn from H n divisors(N) \\ {2} exists.",
+   "NOT": "*** THIS IS NOT AN ERDOS 273 WITNESS. *** It is ONE HALF. Erdos 273 needs TWO DISJOINT halves.",
+   "then": [
+    "1. decode + independently verify: python3 decode_cube_model.py --layout cnf/hard-half-only-N<N>.layout.json --model out/N<N>/<cube>.solverlog --cube cubes/N<N>/cube-<cube>.cube --out out/N<N>/witness-<cube>.json",
+    "2. STAGE TWO -- find the complementary half (the one that may hold modulus 2) in pool minus the moduli this half used. decode_cube_model.py prints the exact command.",
+    "3. only if stage two closes AND the lifted object re-verifies is there a CANDIDATE witness, status WITNESS_UNVERIFIED",
+    "4. Lean kernel seal is what turns WITNESS_UNVERIFIED into a close. Route is fixed in SAT-LADDER-REPORT-2026-09-02.md; native_decide must be disclosed if used."
+   ]
+  },
+  "all_cubes_UNSAT": {
+   "verdict": "UNSAT_TO_N",
+   "meaning": "NO covering system of Z has distinct moduli all of the form p-1 (p prime >= 5) with lcm dividing 2N. A BOUND WITH AN EXPLICIT CEILING.",
+   "NOT": "*** NEVER a refutation of Erdos 273. *** The problem quantifies over an infinite modulus pool; no finite N settles the negative branch.",
+   "precondition": "partition_check.py must have returned PARTITION_PROVED with arm2_run true against the SAME CNF sha the manifest records."
+  },
+  "anything_else": {
+   "verdict": "INCOMPLETE",
+   "meaning": "a partial sweep is NOT a partial bound. Establishes nothing about the rung."
+  }
+ },
+
+ "kill_rules": {
+  "stall": "a cube with no checkpoint after secs_per_cube + 300 s is re-queued; the stall is logged",
+  "restart_cost": "one cube",
+  "safe_to_kill": "always -- checkpoints are written atomically per cube and finished cubes are skipped on restart"
+ },
+
+ "honesty": {
+  "evidence_class": "COMPUTED_BOUNDED",
+  "never_claim": "OPEN -> closed on the negative branch",
+  "hard_half_is_half": "every SAT in this lane is stage one of two, and the config says so in three places on purpose",
+  "no_receipt_for_3960_hardhalf_before_today": "the campaign holds hardhalf exports for N=27720/83160/360360 only. There is NO receipt in this campaign for a 600 s kissat run on a 3960 hard-half instance; that instance had never been built. It is built here for the first time."
+ }
+}

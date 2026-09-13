@@ -1,0 +1,1 @@
+symmetric-two-halves N=50400 cnf=symmetric-two-halves-N50400.cnf vars=442202 clauses=764026 bytes=40612896 built=2026-09-02T14:31:39Z

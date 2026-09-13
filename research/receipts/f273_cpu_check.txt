@@ -1,0 +1,27 @@
+CPU-vs-WALL AUDIT, 2026-09-02T15:13Z, box load average 44.13 on 32 cores
+(my 4 solvers at nice 10, peer at nice 0, my 3 builders at nice 19)
+
+pid     ni  elapsed   cpu_secs  %cpu   rung
+162723  10  19:31     1170      99.9   N=55440
+162722  10  19:31     1171      99.9   N=83160
+161366  10  23:42     1422      99.9   N=27720
+161367  10  23:42     1421      99.9   N=50400
+
+VERDICT: cpu_secs == elapsed_secs to within 1 s on every lane. Despite the box being
+oversubscribed nearly 1.4x, nice 10 is NOT starving these processes. The wall-clock
+`--time=4200` cap therefore delivers ~4200 s of real CPU, and every `solve_seconds`
+figure in the receipts is honest compute, not contended wall time.
+
+--- second audit, 2026-09-02T15:32Z (after a FALSE ALARM on my side) ---
+A `ps -eo etime,times,args | grep 'kissat -q'` returned empty and I briefly believed the
+solvers had been killed. They had not. A direct `ps -p <pids>` shows all four alive:
+
+  pid     ppid    stat  elapsed  cpu_s  %cpu  rung
+  161366  161362  RN    39:28    2368   99.9  N=27720
+  161367  161363  RN    39:28    2368   99.9  N=50400
+  162722  162721  RN    35:17    2117   99.9  N=83160
+  162723  162720  RN    35:17    2117   99.9  N=55440
+
+cpu_secs == elapsed_secs again. Recorded because the false alarm is itself the lesson:
+a malformed monitoring command is indistinguishable from a dead process until you check
+the pid directly. No receipt was written from the false reading.

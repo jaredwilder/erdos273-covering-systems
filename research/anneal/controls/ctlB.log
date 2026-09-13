@@ -1,0 +1,16 @@
+# anneal273w(WEIGHTED) N=144 K=11 S=1.277778 seed=6 secs=5 noise=0.15 fix3=1
+# question-lock: /root/peer/anneal273/erdos273-covering-sat-ladder.json
+# pool: 3 4 6 8 9 12 16 18 24 36 48
+# NOTE: S<=1 means the pool cannot cover -- density floor.
+WITNESS iter=82 secs=0.00
+0 mod 3
+3 mod 4
+4 mod 6
+1 mod 8
+2 mod 9
+8 mod 12
+5 mod 16
+8 mod 18
+5 mod 24
+14 mod 36
+13 mod 48
